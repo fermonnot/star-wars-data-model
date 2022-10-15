@@ -5,13 +5,14 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from eralchemy import render_er
-from enum import Enum, unique
+# from enum import Enum, unique
 
 Base = declarative_base()
 
-class Nature(Enum):
-    character = "__Character__",
-    # planets = "Planets"
+# intente con el enum pero me apreció que no era valido asi que lo hice de la primera manera aprendida
+# class Nature(Enum):
+#     character = "__Character__",
+#     # planets = "Planets"
 
 
 class Character(Base):
